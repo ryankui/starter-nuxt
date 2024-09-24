@@ -11,10 +11,16 @@ import {
 export default defineConfig({
   shortcuts: [
     {
-      'bg-base': 'bg-white dark:bg-black',
-      'color-base': 'text-black dark:text-white',
-      'border-base': 'border-[#8884]',
-      'icon-btn': 'text-[0.9em] inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 !outline-none',
+      'border-base': 'border-gray-200 dark:border-gray-800',
+      'bg-active': 'bg-gray:10',
+      'bg-faded': 'bg-gray:5',
+      'bg-base': 'bg-white dark:bg-[#020420]',
+      'text-faded': 'text-gray6:100 dark:text-gray3:80',
+
+      'bg-code': 'bg-gray/5',
+
+      'bg-inline-code': 'bg-gray-100 dark:bg-gray-800/75',
+      'border-inline-code': 'border-gray-200 dark:border-gray-700/75',
     },
   ],
   rules: [],
@@ -23,7 +29,6 @@ export default defineConfig({
     presetUno(),
     presetAttributify(),
     presetIcons({
-      scale: 1.5,
       extraProperties: {
         'display': 'inline-block',
         'vertical-align': 'text-bottom',

@@ -11,6 +11,7 @@ html {
 }
 
 html.dark {
+  color-scheme: dark;
   --c-bg: #050505;
   --c-scrollbar: #111;
   --c-scrollbar-hover: #222;

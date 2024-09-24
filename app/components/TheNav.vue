@@ -10,6 +10,7 @@ const isDark = useDark()
   <nav class="h-12 w-full flex items-center justify-end gap-2 border-b px-4 py-2 border-base">
     <button
       rounded p-2
+      title="Toggle Dark Mode"
       hover="bg-active"
       @click="isDark = !isDark"
     >

@@ -8,9 +8,9 @@ const title = useTitle('Hello Nuxt!')
   <main class="color-base relative grid rows-[max-content_1fr] size-screen">
     <TheNav />
     <div class="h-full flex flex-col items-center justify-center of-scroll">
-      <div class="text-base font-bold">
+      <h1 class="pb-2 text-3xl font-semibold">
         {{ title }}
-      </div>
+      </h1>
       <ShadcnButton class="mt-4" @click="reloadNuxtApp({ ttl: 0 })">
         Refresh Page
       </ShadcnButton>

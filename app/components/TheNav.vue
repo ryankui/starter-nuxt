@@ -7,23 +7,29 @@ const isDark = useDark()
 </script>
 
 <template>
-  <nav class="h-12 w-full flex items-center justify-end gap-2 border-b px-4 py-2 border-base">
-    <button
-      rounded p-2
-      title="Toggle Dark Mode"
-      hover="bg-active"
-      @click="isDark = !isDark"
-    >
-      <div class="i-ph-sun-dim-duotone dark:i-ph-moon-stars-duotone" text-2xl />
-    </button>
-    <NuxtLink
-      rounded p2
-      title="GitHub"
-      hover="bg-active"
-      :href="REPO"
-      target="_blank"
-    >
-      <div i-carbon-logo-github text-2xl />
+  <nav flex="~ gap-1 items-center" class="h-12 w-full border-b px-4 py-2 border-base">
+    <NuxtLink href="/" target="_self">
+      <div i-logos-nuxt text-2xl />
     </NuxtLink>
+    <div flex-auto />
+    <div flex="~ gap-1 items-center">
+      <ShadcnButton
+        p-2!
+        variant="ghost"
+        title="Toggle Dark Mode"
+        @click="isDark = !isDark"
+      >
+        <div class="i-ph-sun-dim-duotone dark:i-ph-moon-stars-duotone" text-2xl />
+      </ShadcnButton>
+      <NuxtLink
+        icon-link
+        title="GitHub"
+        hover="bg-active"
+        :href="REPO"
+        target="_blank"
+      >
+        <div i-carbon-logo-github text-2xl />
+      </NuxtLink>
+    </div>
   </nav>
 </template>

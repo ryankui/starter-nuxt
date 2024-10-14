@@ -2,10 +2,6 @@
   // https://nuxt.com/docs/guide/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "paths": {
-      // fix components.json aliases
-      "~/*": ["./app/*"]
-    },
     "types": ["vitest/globals"]
   }
 }

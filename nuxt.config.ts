@@ -6,9 +6,16 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: [
-    '@unocss/nuxt',
-  ],
+  modules: ['@unocss/nuxt', 'shadcn-nuxt'],
+
+  shadcn: {
+    componentDir: './app/components/ui',
+  },
+
+  components: [{
+    path: '~/components',
+    pathPrefix: false,
+  }],
 
   css: [
     '@unocss/reset/tailwind.css',

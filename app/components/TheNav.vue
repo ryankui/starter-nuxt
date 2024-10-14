@@ -13,7 +13,7 @@ const isDark = useDark()
     </NuxtLink>
     <div flex-auto />
     <div flex="~ gap-1 items-center">
-      <ShadcnButton
+      <Button
         p-2!
         variant="ghost"
         title="Toggle Dark Mode"
@@ -21,7 +21,7 @@ const isDark = useDark()
         @click="isDark = !isDark"
       >
         <div class="i-ph-sun-dim-duotone dark:i-ph-moon-stars-duotone" text-xl />
-      </ShadcnButton>
+      </Button>
       <NuxtLink
         icon-link
         title="GitHub"

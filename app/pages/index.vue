@@ -11,7 +11,7 @@ const title = useTitle('Hello Nuxt!')
       <h1 class="pb-2 text-3xl font-semibold">
         {{ title }}
       </h1>
-      <ShadcnButton class="mt-4" @click="reloadNuxtApp({ ttl: 0 })">
+      <ShadcnButton class="mt-4" size="sm" @click="reloadNuxtApp({ ttl: 0 })">
         Refresh Page
       </ShadcnButton>
     </div>

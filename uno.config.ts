@@ -24,7 +24,7 @@ export default defineConfig({
       'bg-inline-code': 'bg-gray-100 dark:bg-gray-800/75',
       'border-inline-code': 'border-gray-200 dark:border-gray-700/75',
 
-      'icon-link': 'h-10 inline-flex items-center justify-center whitespace-nowrap rounded-md p-2 text-sm font-medium ring-offset-background transition-colors disabled:pointer-events-none hover:bg-accent hover:text-accent-foreground disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring',
+      'icon-link': 'h-9 inline-flex items-center justify-center whitespace-nowrap rounded-md p-2 text-sm font-medium ring-offset-background transition-colors disabled:pointer-events-none hover:bg-accent hover:text-accent-foreground disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring',
     },
   ],
   rules: [],

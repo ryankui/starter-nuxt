@@ -7,9 +7,9 @@ const isDark = useDark()
 </script>
 
 <template>
-  <nav flex="~ gap-1 items-center" class="h-12 w-full border-b px-4 py-2 border-base">
+  <nav flex="~ gap-1 items-center" class="h-14 w-full border-b px-8 py-2 border-base">
     <NuxtLink href="/" target="_self">
-      <div i-logos-nuxt text-2xl />
+      <div i-logos-nuxt text-xl />
     </NuxtLink>
     <div flex-auto />
     <div flex="~ gap-1 items-center">
@@ -17,9 +17,10 @@ const isDark = useDark()
         p-2!
         variant="ghost"
         title="Toggle Dark Mode"
+        size="sm"
         @click="isDark = !isDark"
       >
-        <div class="i-ph-sun-dim-duotone dark:i-ph-moon-stars-duotone" text-2xl />
+        <div class="i-ph-sun-dim-duotone dark:i-ph-moon-stars-duotone" text-xl />
       </ShadcnButton>
       <NuxtLink
         icon-link
@@ -28,7 +29,7 @@ const isDark = useDark()
         :href="REPO"
         target="_blank"
       >
-        <div i-carbon-logo-github text-2xl />
+        <div i-carbon-logo-github text-xl />
       </NuxtLink>
     </div>
   </nav>

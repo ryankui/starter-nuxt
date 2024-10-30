@@ -22,5 +22,5 @@ export default defineNuxtConfig({
     '~/global.css',
   ],
 
-  compatibilityDate: '2024-08-23',
+  compatibilityDate: '2024-10-14',
 })

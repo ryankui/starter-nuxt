@@ -6,7 +6,14 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: ['@unocss/nuxt', 'shadcn-nuxt'],
+  modules: ['@unocss/nuxt', 'shadcn-nuxt', '@nuxt/eslint'],
+
+  eslint: {
+    config: {
+      standalone: false,
+      autoInit: false,
+    },
+  },
 
   shadcn: {
     componentDir: './app/components/ui',

@@ -19,9 +19,9 @@
     "@vueuse/core": "^11.2.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "lucide-vue-next": "^0.454.0",
-    "nuxt": "^3.13.2",
-    "radix-vue": "^1.9.8",
+    "lucide-vue-next": "^0.456.0",
+    "nuxt": "^3.14.159",
+    "radix-vue": "^1.9.9",
     "shadcn-nuxt": "^0.10.4",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
@@ -30,27 +30,27 @@
   "devDependencies": {
     "@antfu/eslint-config": "^3.8.0",
     "@antfu/ni": "^0.23.0",
-    "@iconify/json": "^2.2.266",
+    "@iconify/json": "^2.2.270",
     "@nuxt/eslint": "^0.6.1",
     "@nuxt/test-utils": "^3.14.4",
     "@nuxtjs/tailwindcss": "^6.12.2",
-    "@types/node": "^22.8.5",
-    "@unocss/eslint-plugin": "^0.63.6",
-    "@unocss/nuxt": "^0.63.6",
-    "@unocss/reset": "^0.63.6",
-    "eslint": "^9.13.0",
+    "@types/node": "^22.9.0",
+    "@unocss/eslint-plugin": "^0.64.0",
+    "@unocss/nuxt": "^0.64.0",
+    "@unocss/reset": "^0.64.0",
+    "eslint": "^9.14.0",
     "eslint-plugin-format": "^0.1.2",
     "lint-staged": "^15.2.10",
     "simple-git-hooks": "^2.11.1",
     "typescript": "~5.6.3",
-    "unocss": "^0.63.6",
+    "unocss": "^0.64.0",
     "unocss-preset-animations": "^1.1.0",
     "unocss-preset-shadcn": "^0.3.1",
     "vitest": "^2.1.4",
     "vue-tsc": "^2.1.10"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
+    "pre-commit": "nr lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"

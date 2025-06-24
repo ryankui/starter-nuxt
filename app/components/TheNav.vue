@@ -7,21 +7,21 @@ const isDark = useDark()
 </script>
 
 <template>
-  <nav flex="~ gap-1 items-center" class="h-14 w-full border-b px-8 py-2 border-base">
+  <nav flex="~ gap-1 items-center" class="h-14 w-full border-b border-base px-8 py-2">
     <NuxtLink href="/" target="_self">
       <div i-logos-nuxt text-xl />
     </NuxtLink>
     <div flex-auto />
     <div flex="~ gap-1 items-center">
-      <Button
-        p-2!
+      <UiButton
+        p="2!"
         variant="ghost"
         title="Toggle Dark Mode"
         size="sm"
         @click="isDark = !isDark"
       >
         <div class="i-ph-sun-dim-duotone dark:i-ph-moon-stars-duotone" text-xl />
-      </Button>
+      </UiButton>
       <NuxtLink
         icon-link
         title="GitHub"
